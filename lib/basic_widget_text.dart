@@ -91,13 +91,13 @@ class BasicWidgetText extends StatelessWidget {
                   text:
                   TextSpan(text : 'I am agree to the ', style: Theme.of(context).textTheme.labelSmall,
                       children:  [
-                        TextSpan(text: 'Term',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.blue,decoration: TextDecoration.underline),
+                        TextSpan(text: 'Term',style: const TextStyle(fontWeight: FontWeight.bold,color: Colors.blue,decoration: TextDecoration.underline),
                           recognizer: TapGestureRecognizer()
                             ..onTap = () {
                               // do something
                             },),
                         const TextSpan(text: ' and '),
-                        TextSpan(text: 'Privacy',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.blue,decoration: TextDecoration.underline),
+                        TextSpan(text: 'Privacy',style: const TextStyle(fontWeight: FontWeight.bold,color: Colors.blue,decoration: TextDecoration.underline),
                             recognizer: TapGestureRecognizer()
                               ..onTap = (){
 
