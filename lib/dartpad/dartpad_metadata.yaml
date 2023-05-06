@@ -1,4 +1,4 @@
-name: A Dartpad exercise with repositories
+name: Basic Widget
 mode: flutter
 files:
-  - name: main.dart
+  - name: basic_widget_text.dart
