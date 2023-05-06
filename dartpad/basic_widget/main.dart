@@ -22,37 +22,51 @@ class BasicWidgetText extends StatelessWidget {
                 'This text is center aligned.',
                 textAlign: TextAlign.center,
               ),
-              const Divider(),
+             const Divider(),
+
+              
               const Text(
                 'This is a very long text that will wrap around the edges of the container if the softWrap property is set to true.',
                 softWrap: true,
               ),
-              const Divider(),
+             const Divider(),
+              
+              
               const Text(
                 'This text will be truncated with an ellipsis at the end if it overflows the container.',
                 overflow: TextOverflow.ellipsis,
               ),
-              const Divider(),
+             const Divider(),
+              
+              
               const Text(
                 'مرحبا بالعالم', // Arabic text
                 textDirection: TextDirection.rtl,
               ),
-              const Divider(),
+             const Divider(),
+              
+              
               const Text(
                 ' The spacing between letters in the text',
                 style: TextStyle(letterSpacing: 2.0),
               ),
-              const Divider(),
+             const Divider(),
+              
+              
               const Text(
                 ' The spacing between lines in the text',
                 style: TextStyle(height: 5.0),
               ),
-              const Divider(),
+             const Divider(),
+              
+              
               Text(
                 'This text will use the headline6 text theme.',
                 style: Theme.of(context).textTheme.headlineSmall,
               ),
-              const Divider(),
+             const Divider(),
+              
+              
               Semantics(
                 label: 'This is a button',
                 child: TextButton(
@@ -60,7 +74,9 @@ class BasicWidgetText extends StatelessWidget {
                   child: const Text('Accessibility Button'),
                 ),
               ),
-              const Divider(),
+             const Divider(),
+              
+              
               RichText(
                 text: const TextSpan(
                   text: 'Hello ',
@@ -86,18 +102,20 @@ class BasicWidgetText extends StatelessWidget {
                   ],
                 ),
               ),
-              const Divider(),
+             const Divider(),
+              
+              
               RichText(
                   text:
                   TextSpan(text : 'I am agree to the ', style: Theme.of(context).textTheme.labelSmall,
                       children:  [
-                        TextSpan(text: 'Term',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.blue,decoration: TextDecoration.underline),
+                        TextSpan(text: 'Term',style: const TextStyle(fontWeight: FontWeight.bold,color: Colors.blue,decoration: TextDecoration.underline),
                           recognizer: TapGestureRecognizer()
                             ..onTap = () {
                               // do something
                             },),
                         const TextSpan(text: ' and '),
-                        TextSpan(text: 'Privacy',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.blue,decoration: TextDecoration.underline),
+                        TextSpan(text: 'Privacy',style: const TextStyle(fontWeight: FontWeight.bold,color: Colors.blue,decoration: TextDecoration.underline),
                             recognizer: TapGestureRecognizer()
                               ..onTap = (){
 
@@ -105,7 +123,9 @@ class BasicWidgetText extends StatelessWidget {
                       ]
                   )
               ),
-              const Divider(),
+             const Divider(),
+              
+              
               const Text(
                 'This text has a shadow',
                 style: TextStyle(
@@ -118,7 +138,9 @@ class BasicWidgetText extends StatelessWidget {
                   ],
                 ),
               ),
-              const Divider(),
+             const Divider(),
+              
+              
               const Material(
                 textStyle: TextStyle(
                   color: Colors.green,
@@ -129,14 +151,18 @@ class BasicWidgetText extends StatelessWidget {
                   'This text will use the custom textStyle defined in the Material widget',
                 ),
               ),
-              const Divider(),
+             const Divider(),
+              
+              
               const SelectableText(
                 'This text can be selected',
                 style: TextStyle(
                   fontSize: 18,
                 ),
               ),
-              const Divider(),
+             const Divider(),
+              
+              
               Row(
                 children: const [
                   Flexible(
@@ -150,7 +176,9 @@ class BasicWidgetText extends StatelessWidget {
                   Icon(Icons.star),
                 ],
               ),
-              const Divider(),
+             const Divider(),
+              
+              
               //Using a TextSpan to add multiple styles to text:
               const Text.rich(
                 TextSpan(
@@ -169,7 +197,9 @@ class BasicWidgetText extends StatelessWidget {
                   ],
                 ),
               ),
-              const Divider(),
+             const Divider(),
+              
+              
               const Text(
                 'This text uses a custom font',
                 style: TextStyle(
@@ -177,7 +207,9 @@ class BasicWidgetText extends StatelessWidget {
                   fontSize: 18,
                 ),
               ),
-              const Divider(),
+             const Divider(),
+              
+              
               const Text.rich(
                 TextSpan(
                   text: 'This is ',
@@ -195,7 +227,9 @@ class BasicWidgetText extends StatelessWidget {
                   ],
                 ),
               ),
-              const Divider(),
+             const Divider(),
+              
+              
               DefaultTextStyle(
                 style: const TextStyle(
                   color: Colors.black,
@@ -211,7 +245,9 @@ class BasicWidgetText extends StatelessWidget {
                   ],
                 ),
               ),
-              const Divider(),
+             const Divider(),
+              
+              
               const GradientText(
                 text: "Hello World!",
                 gradient: LinearGradient(
@@ -220,7 +256,9 @@ class BasicWidgetText extends StatelessWidget {
                   end: Alignment.bottomRight,
                 ),
               ),
-              const Divider(),
+             const Divider(),
+              
+              
             ]),
       ),
     ));
