@@ -1,5 +1,5 @@
 name: Basic Widget
 mode: flutter
 files:
-  - name: basic_widget_text.dart
+  - name: main.dart
   - name: test.dart
