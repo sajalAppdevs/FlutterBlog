@@ -2,3 +2,4 @@ name: Basic Widget
 mode: flutter
 files:
   - name: basic_widget_text.dart
+  - name: test.dart
